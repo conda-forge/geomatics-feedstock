@@ -1,5 +1,5 @@
 {% set name = "geomatics" %}
-{% set version = "0.6" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 695bef61dad70fe1d9edbaccca99f333fb8eb4c635f614cae6fa0363744969bb
+  sha256: 9b2f05470f2e7801e1a12ae4b8960a8272720f808d44b78aaf5bea704df848f2
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
