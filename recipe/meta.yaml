@@ -1,5 +1,5 @@
 {% set name = "geomatics" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8645ff94e0dcb0b18fb3cc0c94311ae9f7ca2f0386479e297515fcf3629cefe1
+  sha256: 02eef9d5a3f8d5236ab844869d1cf2ebb2411482820b606bc2f660713cfa27e4
 
 build:
   number: 0
@@ -22,13 +22,18 @@ requirements:
     - python
     - rasterio
     - rasterstats
-    - netCDF4
-    - requests
+    - xarray
+    - h5py
+    - netcdf4
+    - eccodes
+    - cfgrib
     - python-dateutil
     - numpy
     - pandas
+    - requests
     - pyshp
-    - pygrib
+    - affine
+    - pillow
 
 test:
   imports:

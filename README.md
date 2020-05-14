@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: GIS tools developed by Riley Hales for the BYU Hydroinformatics Lab
+Summary: GIS tools in pure python developed by Riley Hales as part of a Master's Thesis at Brigham Young University.
 
 
 
