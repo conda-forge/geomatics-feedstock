@@ -22,13 +22,18 @@ requirements:
     - python
     - rasterio
     - rasterstats
-    - netCDF4
-    - requests
+    - xarray
+    - h5py
+    - netcdf4
+    - eccodes
+    - cfgrib
     - python-dateutil
     - numpy
     - pandas
+    - requests
     - pyshp
-    - pygrib
+    - affine
+    - pillow
 
 test:
   imports:
