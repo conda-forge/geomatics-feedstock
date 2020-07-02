@@ -1,5 +1,5 @@
 {% set name = "geomatics" %}
-{% set version = "0.9" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4fb07183e081eceb5f131042450e6aca4e8bab15dbe84fc137eb40f6cb2bc396
+  sha256: d05acee951a1059f2be953a5d997a8353082472cd32cbcaff78b4013f172dd5e
 
 build:
   number: 0
@@ -35,6 +35,7 @@ requirements:
     - affine
     - pillow
     - geopandas
+    - pygrib
 
 test:
   imports:
