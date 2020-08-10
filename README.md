@@ -5,7 +5,7 @@ Home: https://github.com/rileyhales/geomatics
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: GIS tools in pure python developed by Riley Hales as part of a Master's Thesis at Brigham Young University.
 
