@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ff95469f2d9e989fb15029b206bf81e3874f438bb292a9bce9caf022f4247159
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - rasterio
     - rasterstats
     - xarray
@@ -38,6 +38,8 @@ requirements:
     - pygrib
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - geomatics
 
